@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body style="background-color:<%= backgroundColor %>;">
+    <h1><%= title %></h1>
+    <p><span style="text-transform: capitalize;"><%= name %></span>, <%= randomCompliment %></p>
+    <form id="newComplimentForm" action="/:name" method="post">
+      <div>
+        New Compliment: <input type="text" name="compliment" id="newCompliment">
+      </div>
+      <input type="submit" value="Save">
+    </form>
+  </body>
+</html>
