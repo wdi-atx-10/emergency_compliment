@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body style="background-color: <%= color %>">
+    <h1><%= title %></h1>
+    <p><%= compliment %></p>
+    <p>
+      <form name="new_user_form" id="new_user_form" method="post" action="/">
+        Add a compliment <input type="text" name="compliment" id="compliment">
+      <input type="submit" value="Save">
+      </form>
+    </p>
+    </body>
+</html>
