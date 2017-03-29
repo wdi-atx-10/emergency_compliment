@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p><%= compliment %></p>
+    <button onclick="reload()" class="get-another">Get Another</button>
+  </body>
+  <script>
+    var reload = function(){
+      location.reload();
+    };
+  </script>
+</html>
