@@ -51,6 +51,7 @@ router.post('/', function(req, res) {
   };
   res.render('index', {
     title: 'Emergency Compliment',
+    greeting: 'Hello there',
     randomCompliment: getRandomCompliment(),
     backgroundColor: getRandomColor()
   });
