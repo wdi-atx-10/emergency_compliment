@@ -29,16 +29,18 @@ function getRandomColor(){
 router.get('/', function(req, res) {
   res.render('index', {
     title: 'Emergency Compliment',
+    greeting: "Hello there",
     randomCompliment: getRandomCompliment(),
     backgroundColor: getRandomColor()
   });
 });
 
 router.get('/:name', function(req, res) {
-  res.render('name', {
+  res.render('index', {
     title: 'Emergency Compliment',
     randomCompliment: getRandomCompliment(),
-    name: req.params.name
+    greeting: "Hello there, " + req.params.name,
+    backgroundColor: getRandomColor()
   });
 });
 
