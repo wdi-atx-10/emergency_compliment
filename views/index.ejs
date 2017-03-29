@@ -6,8 +6,8 @@
   </head>
   <body style="background-color:<%= backgroundColor %>;">
     <h1><%= title %></h1>
-    <p><span style="text-transform: capitalize;"><%= name %></span>, <%= randomCompliment %></p>
-    <form id="newComplimentForm" action="/:name" method="post">
+    <p><%= randomCompliment %></p>
+    <form id="newComplimentForm" action="/" method="post">
       <div>
         New Compliment: <input type="text" name="compliment" id="newCompliment">
       </div>
