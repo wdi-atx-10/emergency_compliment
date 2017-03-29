@@ -49,12 +49,14 @@ router.post('/', function(req, res) {
   if (newCompliment.length > 0){
     pushNewCompliment(newCompliment);
   };
-  res.render('index', {
-    title: 'Emergency Compliment',
-    greeting: 'Hello there',
-    randomCompliment: getRandomCompliment(),
-    backgroundColor: getRandomColor()
-  });
+  res.redirect('/');
+
+  // res.render('index', {
+  //   title: 'Emergency Compliment',
+  //   greeting: 'Hello there',
+  //   randomCompliment: getRandomCompliment(),
+  //   backgroundColor: getRandomColor()
+  // });
 });
 
 module.exports = router;
