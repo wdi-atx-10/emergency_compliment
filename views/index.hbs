@@ -1,0 +1,16 @@
+{{#if name}}
+  <h1>Hello, {{name}}</h1>
+  <p>{{compliment}}</p>
+  <br><br>
+  <div>
+    <h3>Would you like to add a new compliment to my collection, {{name}}?</h3>
+    <form id="add_compliment_form" method='POST' action='/'>
+      <div>
+        Enter a new compliment: <input name="newCompliment" id="newCompliment" type="text">
+      </div>
+    </form>
+  </div>
+{{else}}
+  <h1>Welcome to {{title}}</h1>
+  <p>{{compliment}}</p>
+{{/if}}
