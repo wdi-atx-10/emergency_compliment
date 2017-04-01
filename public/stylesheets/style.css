@@ -1,0 +1,22 @@
+.child {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+a {
+  color: #00B7FF;
+}
+
+button {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  border: white solid;
+}
