@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <div class="container">
+      <head>
+        <div class="child">
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        </div>
+      </head>
+
+      <body style="background-color: <%= color %>">
+    <div class ="child">
+      <h1><%= title %></h1>
+    </div>
+    <div class ="child">
+      <p><%= welcome %></p>
+    </div>
+    <div class ="child">
+      <p><%= comments %><p>
+    </div>
+    <div class ="child">
+        <form method="POST"> What is your name?
+        <div class ="child">
+          <input type="text" name="name" value="">
+        </div >
+        <div class ="child">
+            <button style="margin-right: 10px; background-color: <%= color %>" type="submit" name="button">meh.</button>
+          <button style="background-color: <%= color %>" type="submit" name="button">thanks!</button>
+        </div>
+        </form>
+    </div>
+      </body>
+    </div>
+</html>
