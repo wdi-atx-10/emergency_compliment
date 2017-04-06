@@ -37,9 +37,11 @@ router.get('/:name', function(req, res, next) {
   });
 });
 
+var newCompliment=form.val();
 
-
-
+function addCompliment(){
+  compliments.push(newCompliment)
+};
 
 
 module.exports = router;
