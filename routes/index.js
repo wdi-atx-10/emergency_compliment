@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
   user : req.params.name
 });
 })
-module.exports = router;
+
 
 router.post('/', function(req, res, next) {
  var newCompliment = new Compliment({
@@ -37,3 +37,5 @@ newCompliment.save(function(err,compliment){
 	res.redirect('/');
 })
 });
+
+module.exports = router;
