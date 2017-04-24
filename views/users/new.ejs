@@ -1,0 +1,19 @@
+<% include ../partials/header %>
+
+<h2><%= user %></h2>
+<h3><%= comment %></h3>
+
+<form name="new_compliment_form" id="new_user_form" method="post" action=compliments>
+  <div>
+    Write a compliment here <input type="text" name="new_compliment" id="new_compliment">
+  </div>
+  <input type="submit" value="Save">
+
+</form>
+</body>
+</html>
+
+<form name="compliment_form" action="/" method="POST">
+      <input type="text" name="compliment" placeholder="Input compliment here...">
+      <input type="submit" name="submit">
+    </form>
