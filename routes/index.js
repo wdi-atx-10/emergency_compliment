@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
 var compliments = [
-  "Your instructors love you",
-  "High five = ^5",
-  "Amanda thinks you're wicked smart!",
-  "Britney Jo is sooo proud of you! :)",
-  "Sean would totally hire you.",
-  "It's almost beer o'clock!"
+  "You go faster than Sanic!",
+  "You'll never have to complete CodeWars challenges in a work environment!",
+  "Mike Dang's zerg micro is no match for you Toss build!",
+  "People only hire for CSS!",
+  "Drugs",
+  "Magic the Gathering is a certifiable work skill!"
 ];
 var colors = ["#fd6c3b", "#4edacf","#65a576","#f2d83d"];
 
@@ -36,5 +36,14 @@ router.get('/:name', function(req, res, next) {
       name: name
      });
 });
+
+router.post('/', function(req, res){
+  var newCompliment = req.body.compliment.val;
+  compliments.push(newCompliment);
+  res.redirect('/');
+});
+  //
+  // var newCompliment = form.val();
+  // compliments.push(newCompliment);
 
 module.exports = router;
